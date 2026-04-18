@@ -210,7 +210,15 @@ textarea.form-input{resize:none;height:100px;line-height:1.6}
     <div class="success" id="success-msg">
       <div class="success-icon">✅</div>
       <div class="success-title">문의가 접수됐어요!</div>
-      <div class="success-desc">빠른 시일 내에 이메일로 답변드릴게요.<br>보통 24시간 이내에 답변해드려요.</div>
+      <div class="success-desc">
+        구글 폼에서 문의 내용을 작성해주세요.<br>
+        제출하면 입력한 이메일로 접수 내용이 발송돼요.<br>
+        보통 24시간 이내에 답변해드려요.
+      </div>
+      <div style="margin-top:16px;display:flex;flex-direction:column;gap:8px">
+        <button onclick="window.open('{FORM_URL}','_blank')" style="padding:10px 20px;border-radius:9px;border:none;background:#0284C7;color:white;font-size:13px;font-weight:600;cursor:pointer">구글 폼으로 이동 →</button>
+        <button onclick="resetForm()" style="padding:10px 20px;border-radius:9px;border:0.5px solid #e2e8f0;background:#f8fafc;color:#475569;font-size:13px;font-weight:500;cursor:pointer">다시 문의하기</button>
+      </div>
     </div>
   </div>
 
